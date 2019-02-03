@@ -1,0 +1,21 @@
+{
+    "name": "mrcrmn/laravel-preset",
+    "description": "My Laravel Preset",
+    "keywords": ["laravel", "preset"],
+    "license": "MIT",
+    "require": {
+        "laravel/framework": "^5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "mrcrmn\\LaravelPreset\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "mrcrmn\\LaravelPreset\\PresetServiceProvider"
+            ]
+        }
+    }
+}
