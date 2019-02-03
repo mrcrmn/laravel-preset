@@ -36,7 +36,7 @@ class Preset extends BasePreset
     protected static function updateStyles()
     {
         tap(new Filesystem, function ($files) {
-            $files->delete(resource_path('sass'));
+            $files->delete(resource_path('sass/_variables.scss'));
             $files->copyDirectory(__DIR__ . '/stubs/resources/sass', resource_path('sass'));
         });
     }
